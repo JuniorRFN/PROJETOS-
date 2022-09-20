@@ -1,0 +1,164 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0rem;
+  padding: 0rem;
+  display: grid;
+  justify-content: center;
+  gap: 5rem;
+  justify-items: center;
+  background-color: #f7f7f7;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+p,
+a {
+  font-size: 1.25rem;
+}
+
+header {
+  margin-top: 5rem;
+}
+
+a {
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 0.25rem;
+}
+
+/* navegador flex */
+.flex_nav {
+  display: flex;
+  list-style: none;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.flex_nav a {
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.flex_nav a:hover {
+  outline: solid 0.1rem #ee2211;
+}
+
+/* grid geral */
+.grid_all {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 62.5rem;
+  max-height: 62.5rem;
+}
+
+/* 1/1 grid */
+.desc_1 {
+  background-color: white;
+  padding: 3rem 2rem;
+  text-align: end;
+  position: relative;
+}
+
+.desc_1 h1 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+
+.desc_1 p {
+  margin-top: 1.5rem;
+}
+
+.desc_1 a {
+  background-color: #ee2211;
+  color: white;
+  margin-top: 1rem;
+}
+
+.desc_1 a:hover {
+  background-color: #b41c0e;
+}
+
+/* detalhe */
+.desc_1 ::before {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #ee2211;
+  position: absolute;
+  top: 2.5rem;
+  left: 29.7rem;
+}
+
+/* 2/1 grid */
+.desc_3 {
+  display: grid;
+  align-content: center;
+  margin: 1rem;
+}
+
+.desc_3 h2 {
+  font-size: 4rem;
+  background-image: url(/img/onda.svg);
+  text-align: end;
+  color: #c6c6c6;
+  text-transform: uppercase;
+  padding: 1.5rem;
+}
+
+/* 2/2 grid */
+.desc_4 {
+  background-color: white;
+  padding: 2rem;
+  position: relative;
+}
+
+.desc_itens:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.desc_itens {
+  padding: 2rem;
+}
+
+.desc_itens:hover {
+  border-left: solid 0.2rem #ee2211;
+}
+
+.desc_itens h3 {
+  margin-bottom: 1rem;
+}
+
+.desc_itens h3,
+.desc_itens p {
+  margin-left: 3rem;
+}
+
+.desc_itens img {
+  position: absolute;
+}
+
+/* rodape */
+footer {
+  display: grid;
+  background-color: white;
+  margin-top: 10rem;
+  width: 100vw;
+  height: 7rem;
+  place-items: center;
+}
